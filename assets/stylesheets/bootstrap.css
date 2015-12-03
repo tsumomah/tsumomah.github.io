@@ -6161,8 +6161,11 @@ button.close {
   }
 }
 header {
-  background: url("../images/blog-bg.png");
+  background: url("../images/bg_02.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #464646;
 }
 header .jumbotron {
   margin-bottom: 40px;
@@ -6221,26 +6224,4 @@ header .jumbotron h1 {
 }
 .thumbnail a:hover {
   text-decoration: none;
-}
-.cut {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  /*不要部分の切り取り*/
-  height: 100px;
-  /*正方形にしたい高さサイズ*/
-  width: 100px;
-  /*正方形にしたい横幅サイズ*/
-  display: block;
-  /*spanなのでblock要素にする*/
-  margin: 0 10px 10px 0;
-  border: 8px solid #ccc;
-}
-.cut_image {
-  /*縦・横の画像でも一応見れるように微妙に調整されています。*/
-  diaplay: block;
-  height: 150px;
-  position: absolute;
-  left: -50px;
-  top: -20px;
 }
