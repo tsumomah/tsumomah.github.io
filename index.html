@@ -18,46 +18,97 @@
 		<![endif]-->
 	</head>
 	<body>
-		<header class="jumbotron">
-			<div class="Zangiri_-Atama container">
+		<div id="picture"></div>
+		<div id="layer2"></div>
+		<div id="layer1"></div>
+
+		<header class="">
+			<div class="title container">
 				<h1>Humor</h1>
 				<p>Where there is no love, there is no sense either.</p>
 			</div>
+			<!-- <a class="menu-trigger" href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a> -->
 		</header>
 
-		<main class="container">
-			<section class="What_-_is_-_tsumomah">
+		<main>
+			<section class="container about">
+				<h2>About</h2>
 				<dl>
 				  <dt>Name</dt>
 				  <dd>Tsumomah</dd>
 				  <dt>Job</dt>
-				  <dd>Designer</dd>
+				  <dd>Design / Photo</dd>
 				</dl>
 			</section>
-			<section class="What_-_is_-_tsumomah">
-				 <address>
-				    <strong>Humor Project</strong><br>
-				    Nice Media<br>
-				    In Web<br>
-				    <abbr title="Phone">P:</abbr> (080) 5400-xxxx
-				  </address>
 
-				  <address>
-				    <strong>Tsumomah</strong><br>
-				    <a href="mailto:#">tsumomah923@gmail.com</a>
-				  </address>
+			<section class="container portfolio">
+				<h2>Portfolio</h2>
+				<div class="row">
+				  <div class="col-xs-12 col-md-4">
+				    <figure class="thumbnail navy">
+				      <img src="assets/images/p_01.jpg" alt="...">
+				      <figcaption>
+				          <h5>boy</h2>
+				          <p>
+
+				          </p>
+				          <a href="#">No More</a>
+				        </figcaption>
+				    </figure>
+				  </div>
+				  <div class="col-xs-12 col-md-4">
+				   <figure class="thumbnail navy">
+				      <img src="assets/images/p_02.jpg" alt="...">
+				      <figcaption>
+				          <h5>memento</h2>
+				          <p>
+				           
+				          </p>
+				          <a href="#">No More</a>
+				        </figcaption>
+				    </figure>
+				  </div>
+				  <div class="col-xs-12 col-md-4">
+				    <figure class="thumbnail navy">
+				      <img src="assets/images/p_03.jpg" alt="...">
+				      <figcaption>
+				          <h5>Shinjuku eye</h2>
+				          <p>
+				            
+				          </p>
+				          <a href="#">No More</a>
+				        </figcaption>
+				    </figure>
+				  </div>
+				</div>
 			</section>
-			<section class="SnS">
-				<a href="https://twitter.com/tsumomah" >Twitter</a>
+
+			<section class="container contact">
+				<h2>Contact</h2>
+				<a href="https://twitter.com/tsumomah" target="_blank">Twitter</a>
 			</section>
+			
 		</main>
 		
 		<footer>
+			<!-- <a class="button" href="#">Button</a> -->
 			<div class="copy text-center">
 				<small>Copyright　&copy; 2015 Tsumomah All Rights Reserved.</small>
 			</div>
 		</footer>
-
+		
+		<script>
+		/* Demo purposes only */
+		$(".hover").mouseleave(
+		  function () {
+		    $(this).removeClass("hover");
+		  }
+		);
+		</script>
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
