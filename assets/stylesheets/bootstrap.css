@@ -6221,10 +6221,26 @@ body {
   font-style: italic;
 }
 body .title {
+  padding-top: 320px;
+  height: 768px;
   color: #eeeeee;
+}
+@media screen and (max-width: 638px) {
+  body .title {
+    padding-top: 160px;
+  }
+}
+body main .about {
+  background-color: rgba(8, 1, 2, 0.8);
 }
 body main .about a {
   color: #eeeeee;
+}
+body main .portfolio {
+  background-color: rgba(40, 12, 22, 0.8);
+}
+body main .contact {
+  background-color: rgba(140, 28, 52, 0.8);
 }
 body footer {
   margin-top: 40px;
@@ -6234,15 +6250,8 @@ body footer small {
   font-size: 16px;
 }
 section {
-  padding: 40px;
+  padding: 120px 0;
 }
-/* Included color classes.. 
-  .red 
-  .blue 
-  .yellow
-  .green
-  .navy
-*/
 figure.thumbnail {
   color: #fff;
   position: relative;
@@ -6330,85 +6339,4 @@ figure.thumbnail.hover a {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
-}
-.menu-trigger,
-.menu-trigger span {
-  display: inline-block;
-  transition: all .4s;
-  box-sizing: border-box;
-}
-.menu-trigger {
-  position: relative;
-  width: 50px;
-  height: 44px;
-}
-.menu-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  border-radius: 4px;
-}
-.menu-trigger span:nth-of-type(1) {
-  top: 0;
-}
-.menu-trigger span:nth-of-type(2) {
-  top: 20px;
-}
-.menu-trigger span:nth-of-type(3) {
-  bottom: 0;
-}
-.menu-trigger.active {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-.menu-trigger.active span:nth-of-type(1) {
-  -webkit-transform: translateY(20px) rotate(-45deg);
-  transform: translateY(20px) rotate(-45deg);
-}
-.menu-trigger.active span:nth-of-type(2) {
-  -webkit-transform: translateY(0) rotate(45deg);
-  transform: translateY(0) rotate(45deg);
-}
-.menu-trigger.active span:nth-of-type(3) {
-  opacity: 0;
-}
-.button {
-  background: #777777;
-  color: #eeeeee;
-  border: none;
-  position: relative;
-  height: 60px;
-  font-size: 1.6em;
-  padding: .6em 3em;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-}
-.button:hover {
-  background: #777777;
-  color: #eeeeee;
-}
-.button:before,
-.button:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: #eeeeee;
-  transition: 400ms ease all;
-}
-.button:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-.button:hover:before,
-.button:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
 }
