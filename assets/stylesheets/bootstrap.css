@@ -6177,23 +6177,29 @@ body .title {
   }
 }
 body main .about {
-  background-color: #fff;
+  background-color: rgba(2, 0, 2, 0.6);
+  color: #FFF;
 }
-body main .about a {
-  color: #555555;
+body main .about dt {
+  margin-top: 15px;
+  color: #FFF;
+}
+body main .about dd a {
+  color: #FFF;
 }
 body main .portfolio {
   background-color: #e9e9e9;
 }
 body main .contact {
-  background-color: rgba(140, 28, 52, 0.9);
+  background-color: rgba(0, 0, 2, 0.8);
 }
 body footer {
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 40px 0;
 }
 body footer small {
   font-size: 16px;
+  color: #FFF;
 }
 .sp_menu .navbar-toggle {
   border: none;
@@ -6229,7 +6235,7 @@ body footer small {
   }
 }
 section {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 figure.thumbnail {
   color: #fff;
